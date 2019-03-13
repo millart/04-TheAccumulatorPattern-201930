@@ -10,7 +10,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program, then READ its code.
 #     Then answer the following, GETTING HELP AS NEED!  (Ask questions!!!)
 #     Write your answers in any reasonable way (your choice).
@@ -41,12 +41,14 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #          what expression would you use in the _____ below?
 #
 #            for k in range(s - r + 1):
+#                # when using k, add r!
 #
 #     d. If you want a loop that runs from (r + 4) to (s - 10),
 #          including the (r + 4) but not including the (s - 10),
 #          what expression would you use in the _____ below?
 #
-#            for k in range(s - r - 5):
+#            for k in range(s - r - 14):
+#                # when using k, add r!
 #
 #     e. The following code snippet attempts to return the number
 #          of integers from r to s, inclusive, whose cosines are positive.
@@ -59,14 +61,17 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #                  return count
 #
 #               First line: reversed r and s
-#               Second line: count = 0 should be outside of loop
+#               Second line: count = 0 should be outside of loop (before it)
 #               Third line: variable should be k, not r
 #               Fourth line: count = count + 1
-#               Fifth line: return count should be outside of loop
+#               Fifth line: return count should be outside of loop (after it)
 #
 #     f. The code in the "graphics accumulation" example below includes:
 #            for _ in range(n):
 #        What does the   _   (underscore) mean?
+#
+#           The underscore represents the variable that is used for the accumulator
+#           (for loop). Within the loop, this variable changes from 0 to the range indicated.
 #
 #     g. The code in the "graphics accumulation" example below includes:
 #
@@ -89,6 +94,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #                  circle = rg.Circle(point, radius)
 #                  circle.attach_to(window)
 #
+#               Correct!
 #              x = starting_point.x
 #              for k in range(n):
 #                  center = rg.Point(x + (k * diameter), y)
